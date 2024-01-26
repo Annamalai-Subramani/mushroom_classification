@@ -1,0 +1,1 @@
+from src.mushroom_classification.exception import customexception
