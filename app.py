@@ -1,5 +1,6 @@
 from flask import Flask,render_template,request
 from src.mushroom_classification.pipelines.prediction_pipeline import CustomData,PredictPipeline 
+from src.mushroom_classification.logger import logging
 
 app = Flask(__name__)
 app.static_folder="static"
@@ -34,6 +35,7 @@ def Predict():
             )
 
         features=data.get_data_as_dataframe()
+        logging.info(f'feature data{features.to_string()}')
         pred=PredictPipeline().predict(features=features)
         if pred=="e":
             pred="This Mushroom is Edible"

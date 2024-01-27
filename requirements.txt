@@ -6,4 +6,5 @@ ipykernel
 Flask
 matplotlib
 joblib
+streamlit
 -e .
