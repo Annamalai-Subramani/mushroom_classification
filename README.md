@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 2. AmazonEC2FullAccess
 
 ## 3. Create ECR repo to store/save docker image
-- Save the URI: 852566064072.dkr.ecr.ap-south-1.amazonaws.com/mushroom
+- Save the URI: 852566064072.dkr.ecr.ap-south-1.amazonaws.com/project
 
 ## 4. Create EC2 machine (Ubuntu)
 ## 5. Open EC2 and Install docker in EC2 Machine:
